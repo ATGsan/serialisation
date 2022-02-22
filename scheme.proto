@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package scheme;
+
+message Player {
+  int32 PackageID = 1;
+  int32 PersonID = 2;
+  string Name = 3;
+  map<string, int32> Inventory = 4;
+  string CurrentLocation = 5;
+}
